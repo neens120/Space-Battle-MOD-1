@@ -1,0 +1,119 @@
+/*from top to bottom*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*Imported my font*/
+
+/*--------------------------------
+/Space battle header banner
+/--------------------------------*/
+.header {
+  padding: 10px;
+  background-color: #332d8c;
+  color: white;
+  font-family: 'Press Start 2P';
+  text-shadow: 5px 5px #85aec2;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 0px 0px 70px 70px;
+}
+#alienicon{
+  max-width: 10vw;
+  max-height: 10vh;
+}
+
+
+/*--------------------------------
+/Body 
+/--------------------------------*/
+body{
+    /*background: url(/images/Background/Starry\ background\ \ -\ Layer\ 03\ -\ Stars.png), url(/images/Background/Starry\ background\ \ -\ Layer\ 02\ -\ Stars.png), url(/images/Background/Starry\ background\ \ -\ Layer\ 01\ -\ Void.png);*/
+    margin:0;
+    background: url(/images/Background/pixel-space.png);
+    width:fit-content;
+    overflow-y: hidden;
+}
+
+
+/*--------------------------------
+/Game grid Area
+/--------------------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  box-shadow: 0 0 20px pink;
+  border-radius: 25px;
+  background-color: #000000;
+  opacity: .92;
+  margin-top: 30px;
+  margin-left: 140px;
+  width:80vw;
+  height: 70vh;
+  padding: 10px;
+
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-family:'Press Start 2P';
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+.alienShipImg {
+  width: 65px;
+  height: 60px;
+  padding: 15px;
+}
+#myShipDamage{
+  width: 100px;
+  height: 100px;
+}
+.shipNames{
+  color:#4fbaec;
+}
+
+/*--------------------------------
+/Buttons
+/--------------------------------*/
+#attack-button{
+  margin-top: 50px;
+  grid-area: button;
+  justify-content: end;
+}
+#attack-button:hover, #attack-button:active {
+  animation-play-state: paused;
+  transform: scale(1.1);
+}
+
+button{
+  font-family: 'Press Start 2P';
+  display: inline;
+  min-width: 10vw;
+  max-width: 16vw;
+  height: 8vh;
+  border-radius: 8px;
+}
+
+/*--------------------------------
+/Space battle footer banner
+/--------------------------------*/
+.footer {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+  background-color: #332d8c;
+  color: white;
+  font-family: 'Press Start 2P';
+  text-shadow: 2px 2px #85aec2;
+  font-size: 20px;
+  text-align: center;
+}
+#earth-gif{
+  position: relative;
+  z-index: 1000;
+  left: 70px;
+  bottom: 250px;
+  width:170px;
+  height:170px;
+  margin-bottom: -300px;
+}
